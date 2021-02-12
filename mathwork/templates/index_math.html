@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>MathWork</h1>
+    <div class="card">
+      <div class="card-header" style="background-color: #e3f2fd;">
+        Question
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>{{ question }}
+              {{ answer }}
+          </p>
+          <button type="button" class="btn btn-primary btn-lg" onClick="window.location.reload(true)"> Next </button>
+        </blockquote>
+      </div>
+    </div>
+{% endblock %}
